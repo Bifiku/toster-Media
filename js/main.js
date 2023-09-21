@@ -2,7 +2,7 @@
 
 import { fetchData } from './modules/fetchData.js';
 import startTimer from './modules/timer.js';
-import Button from './classes/button.js';
+import Button from './classes/myButton.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Путь к локальному файлу с данными
