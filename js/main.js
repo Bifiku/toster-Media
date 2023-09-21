@@ -6,7 +6,7 @@ import Button from './classes/button.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Путь к локальному файлу с данными
-    const jsonFilePath = '../data/data.json';
+    const jsonFilePath = '../api/data.json';
 
     // Получаем промис
     const data = fetchData(jsonFilePath);
