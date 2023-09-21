@@ -2,7 +2,7 @@
 
 import { fetchData } from './modules/fetchData.js';
 import startTimer from './modules/timer.js';
-import Button from './classes/Button.js';
+import Button from './classes/button.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Путь к локальному файлу с данными
@@ -32,11 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const endDate = new Date(dataJson.date);
             startTimer('timer', endDate);
 
-            document.querySelector('#oldSale').innerHTML = `R ${dataJson.sales.oldSale}`;
-            document.querySelector('#newSale').innerHTML = `R ${dataJson.sales.newSale}`;
-
-
-
+            document.querySelector(
+                '#oldSale'
+            ).innerHTML = `R ${dataJson.sales.oldSale}`;
+            document.querySelector(
+                '#newSale'
+            ).innerHTML = `R ${dataJson.sales.newSale}`;
         } catch (error) {
             console.error('Произошла ошибка:', error); // Обрабатываем ошибку
         }
