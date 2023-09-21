@@ -190,6 +190,7 @@ h1 {
 }
 
 .header__up {
+  text-wrap: balance;
   text-align: center;
   font-size: 1.3rem;
   color: #2C2B31;
