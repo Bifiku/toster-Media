@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Шапка -->
+        <header>
+            <div class="header__up p-10">
+                🇿🇦 SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA 🇿🇦
+            </div>
+            <div class="header__down p-20">
+                <img
+                    title="Нету вашего логотипа в SVG, так что пусть будет картинка, в продакшене такого не будет, обещаю)"
+                    class="p-d-10"
+                    src="images/logo.png"
+                    alt="Логотип компании"
+                />
+                <h2 class="header__title">orthopedic slippers</h2>
+            </div>
+
+            <!-- Секция с баннером -->
+            <section class="banner banner__slippers">
+                <div
+                    title="Проверьте это тестовое, пока не закончился таймер :)"
+                    class="banner__timer frame timer"
+                >
+                    <p class="banner__timer_title">Limited offer</p>
+                    <p class="banner__timer_time" id="timer">
+                        <span id="hours">––</span>:<span id="minutes">––</span
+                        >:<span id="seconds">––</span>
+                    </p>
+                </div>
+                <div
+                    title="Не надейтесь, больше такого не будет"
+                    class="banner__sale frame sale"
+                >
+                    <p
+                        id="oldSale"
+                        class="banner__sale_title strikethrough-text"
+                    >
+                        R 250.00
+                    </p>
+                    <p id="newSale" class="banner__sale_time">R 160.00</p>
+                </div>
+            </section>
+        </header>
+
+        <main class="main">
+            <!-- Секция с оценками -->
+            <section class="rating p-d-20">
+                <div class="rating__score">Excellent 4.8/5</div>
+                <object
+                    data="icons/truspilot.svg"
+                    type="image/svg+xml"
+                    width="72"
+                    height="18"
+                >
+                    Ваш браузер не поддерживает SVG.
+                </object>
+                <div class="rating__selling strikethrough1-text">
+                    <a href="#">best selling</a>
+                </div>
+            </section>
+            <!-- Секция с галереей шлепок -->
+            <section class="p-d-20">
+                <h1 class="p-d-20">Orthopedic Slippers</h1>
+                <div class="swiper mySwiper2 p-d-20">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/black.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/orange.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pink.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/yellow.png" />
+                        </div>
+                    </div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide__small">
+                            <img src="images/black.png" />
+                        </div>
+                        <div class="swiper-slide swiper-slide__small">
+                            <img src="images/orange.png" />
+                        </div>
+                        <div class="swiper-slide swiper-slide__small">
+                            <img src="images/pink.png" />
+                        </div>
+                        <div class="swiper-slide swiper-slide__small">
+                            <img src="images/yellow.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция с информацией и оценкой -->
+            <section class="info p-d-20">
+                <div class="info__delivery p-d-12">
+                    <span>Fast Delivery:</span>
+                    2-4 days from SA 🇿🇦
+                </div>
+                <div class="info__stock p-d-12">
+                    <span>In Stock:</span>
+                    Shipping from Johannesburg 🇿🇦
+                </div>
+                <div class="info__score">
+                    <i class="icon-stars"></i>
+                    <i class="icon-stars"></i>
+                    <i class="icon-stars"></i>
+                    <i class="icon-stars"></i>
+                    <i class="icon-stars"></i>
+                    <div class="info__score_count p-l-10">(10)</div>
+                </div>
+            </section>
+
+            <!-- Секция с опциями -->
+            <section class="p-d-50">
+                <div class="options p-d-20">
+                    <div class="option">
+                        <p class="option__text p-d-5">color</p>
+                        <div class="dropdown">
+                            <button class="dropbtn" id="selectedOptionColors">
+                                Black
+                            </button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <p class="option__text p-d-5">size</p>
+                        <div class="dropdown">
+                            <button class="dropbtn" id="selectedOptionSizes">
+                                2
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="http://youtube.com" target="_blank">buy now</a>
+                </div>
+            </section>
+        </main>
+
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/modules/swiper.js"></script>
+    </body>
+</html>

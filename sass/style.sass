@@ -1,0 +1,185 @@
+@import 'fonts.sass'
+@import 'vars.sass'
+@import 'utils.sass'
+@import 'base.sass'
+@import 'page.sass'
+@import 'swiper.sass'
+@import 'iconFonts'
+
+.main
+    padding: 1.1rem 1.6rem
+
+.header
+    &__up
+        text-align: center
+        font-size: 1.3rem
+        color: $color-black
+        background-color: $color-orange
+    &__down
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        background-color: #FFD1AC
+        img
+            max-width: 100%
+
+
+.banner
+    position: relative
+    display: flex
+    align-items: end
+    justify-content: space-between
+    height: 28rem
+    width: 100%
+    padding: 2rem
+    &__slippers
+        background: url('../images/img-01.png') center/cover no-repeat
+    &__timer
+        display: inline-flex
+        max-width: 10rem
+        padding: .9rem .7rem
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 1rem
+        background-color: $color-orange
+        border-radius: .7rem
+        color: white
+        font-weight: 700
+        text-transform: uppercase
+        &_title
+            line-height: 1
+            font-size: 1.06rem
+        &_time
+            line-height: 1
+            font-size: 2.02rem
+    &__sale
+        display: inline-flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: .6rem
+        border-radius: .56rem
+        color: white
+        font-weight: 700
+        text-transform: uppercase
+        padding: .6rem .7rem
+        background-color: $color-green
+        &_title
+            line-height: 1
+            font-size: 1.8rem
+        &_time
+            line-height: 1
+            font-size: 2.23rem
+
+.rating
+    display: flex
+    justify-content: space-between
+    align-items: end
+    &__score
+        font-size: 1.2rem
+        font-weight: 400
+    &__selling
+        color: $color-green
+        text-align: right
+        font-family: Gotham Pro
+        font-size: 1.2rem
+        text-decoration-line: underline
+        text-underline-offset: 2px
+
+.info
+    &__delivery
+        font-size: 1.5rem
+        font-weight: 400        
+        span
+            font-weight: 700
+    &__stock
+        font-size: 1.5rem
+        font-weight: 400        
+        span
+            font-weight: 700
+    &__score
+        display: flex
+        font-size: 1.4rem
+        font-color: $color-black
+        font-weight: 400   
+        span
+            color: $color-orange
+
+.dropdown 
+    position: relative
+    display: inline-block
+    text-align: center
+    width: 100%
+    font-size: 2.17rem
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    text-transform: uppercase
+
+.dropbtn 
+    background-color: #fff
+    color: $color-black
+    padding: 10px 20px
+    border: none
+    cursor: pointer
+    border-radius: 1.5rem
+    width: 100%
+    font-size: 2.17rem
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    text-transform: uppercase
+
+.dropdown-content 
+    display: block
+    position: absolute
+    background-color: #f9f9f9
+    width: 100%
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    left: 0
+
+
+.dropdown-content__choose 
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+    color: #333
+   
+
+
+.dropdown-content a:hover 
+    background-color: #cfcfcf
+
+.options
+    display: flex
+    gap: 1.5rem
+
+.option
+    display: inline-flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    &__text
+        font-size: 1rem
+        font-weight: 400
+
+.btn
+    display: flex
+    height: 5rem
+    position: relative
+    font-size: 3rem
+    font-style: normal
+    font-weight: 400
+    line-height: 1
+    text-transform: uppercase
+    background-color: $color-green
+    border-radius: 1.5rem
+    color: #fff
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%

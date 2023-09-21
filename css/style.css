@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/gothampro.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/gothampro_bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "GothamPro";
+  src: url("../fonts/gothampro_medium.ttf");
+  font-weight: 500;
+}
+.p-5 {
+  padding: 5px;
+}
+
+.p-d-5 {
+  padding-bottom: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-d-10 {
+  padding-bottom: 10px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+.p-d-12 {
+  padding-bottom: 12px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-d-20 {
+  padding-bottom: 20px;
+}
+
+.p-d-50 {
+  padding-bottom: 50px;
+}
+
+.b-g-green {
+  background-color: #37D997;
+}
+
+.b-g-oragne {
+  background-color: #F19D2F;
+}
+
+.strikethrough-text {
+  position: relative;
+  text-decoration: none;
+}
+.strikethrough-text::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -2px;
+  right: -2px;
+  height: 3.5px;
+  background-color: #E27500;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 500;
+  font-family: "GothamPro", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #F0F0F0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 23.2rem;
+}
+.swiper-slide__small {
+  border-radius: 1rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/iconFonts/icomoon.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon-arrow, .icon-stars {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+
+.icon-stars:before {
+  content: "\e901";
+  color: #f8b656;
+}
+
+.main {
+  padding: 1.1rem 1.6rem;
+}
+
+.header__up {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #2C2B31;
+  background-color: #F19D2F;
+}
+.header__down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFD1AC;
+}
+.header__down img {
+  max-width: 100%;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 28rem;
+  width: 100%;
+  padding: 2rem;
+}
+.banner__slippers {
+  background: url("../images/img-01.png") center/cover no-repeat;
+}
+.banner__timer {
+  display: inline-flex;
+  max-width: 10rem;
+  padding: 0.9rem 0.7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #F19D2F;
+  border-radius: 0.7rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner__timer_title {
+  line-height: 1;
+  font-size: 1.06rem;
+}
+.banner__timer_time {
+  line-height: 1;
+  font-size: 2.02rem;
+}
+.banner__sale {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 0.56rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.6rem 0.7rem;
+  background-color: #37D997;
+}
+.banner__sale_title {
+  line-height: 1;
+  font-size: 1.8rem;
+}
+.banner__sale_time {
+  line-height: 1;
+  font-size: 2.23rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.rating__score {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.rating__selling {
+  color: #37D997;
+  text-align: right;
+  font-family: Gotham Pro;
+  font-size: 1.2rem;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
+.info__delivery {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.info__delivery span {
+  font-weight: 700;
+}
+.info__stock {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.info__stock span {
+  font-weight: 700;
+}
+.info__score {
+  display: flex;
+  font-size: 1.4rem;
+  font-color: #2C2B31;
+  font-weight: 400;
+}
+.info__score span {
+  color: #F19D2F;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 2.17rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #2C2B31;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  width: 100%;
+  font-size: 2.17rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.dropdown-content__choose {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #cfcfcf;
+}
+
+.options {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.option {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.option__text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn {
+  display: flex;
+  height: 5rem;
+  position: relative;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: #37D997;
+  border-radius: 1.5rem;
+  color: #fff;
+}
+.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
